@@ -6,10 +6,6 @@ multimodal hallucination-repair pipeline. Given a multimodal sample
 TIGER iteratively rewrites the model's response so that each emitted
 claim is grounded in the input.
 
-This release contains the TIGER method only — no baselines, no
-hyperparameter ablations, no paper-reproduction scripts. The reference
-backbone is **Qwen2.5-Omni-7B**.
-
 ---
 
 ## Install
