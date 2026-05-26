@@ -85,23 +85,6 @@ setup.py
 README.md
 ```
 
-## Hyperparameters
-
-The constructor of `TigerInferenceEngine` exposes the main knobs:
-
-| Argument | Default | Meaning |
-|---|---|---|
-| `planner_config.max_steps` | 5 | $T$ — number of repair rounds. |
-| `k_repair` | 1 | Candidate generations per repair round. |
-| `lambda_conflict` | 1.5 | $\lambda$ — weight of conflict in risk $r(f) = (1 - \bar s) + \lambda \bar c + \nu \delta$. |
-| `nu_inconsistency` | 0.1 | $\nu$ — weight of cross-modal inconsistency. |
-| `gamma` | 0.8 | Coref-edge propagation decay. |
-| `alpha_batch` | 0.2 | Fraction of facts repaired per round. |
-
-Defaults match the operating point reported in the paper. The
-pipeline is robust to ±0.1 perturbations on these values; see the
-paper appendix for the full sensitivity sweep.
-
 ## Adding a backbone
 
 Subclass `tiger.models.BaseBackbone` and implement `generate(...)`.
