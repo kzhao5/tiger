@@ -1,0 +1,10 @@
+torch>=2.1
+transformers>=4.46
+accelerate>=0.30
+sentence-transformers>=2.7
+spacy>=3.7
+Pillow>=10.0
+numpy>=1.24
+soundfile>=0.12
+decord>=0.6
+clip @ git+https://github.com/openai/CLIP.git
