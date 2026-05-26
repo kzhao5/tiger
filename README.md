@@ -97,15 +97,6 @@ class MyBackbone(BaseBackbone):
         return CandidateOutput(text=...)
 ```
 
-## Citation
-
-```bibtex
-@article{tiger,
-  title  = {TIGER: Traceable Inference with Graph-based Evidence Routing for Multimodal Hallucination Repair},
-  author = {...},
-  year   = {2025},
-}
-```
 
 ## License
 
